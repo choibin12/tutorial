@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	let score = prompt("점수");
+	
+	switch (Math.floor(score/10)) {
+	case 10:
+	case 9: grade ="a"; break;
+	case 8: grade ="b"; break;
+	case 7: grade ="c"; break;
+	case 6: grade ="d"; break;
+	default: grade ="f"; 
+				
+	}
+	document.write("점수 "+score+"등급 "+grade);
+	
+	let num = 85.9876548
+	console.log(num.toFixed(0));
+	console.log(num.toFixed(3));
+	
+	var a = "1.7";
+	console.log(a+3);//결하 ㅂ1.74
+	console.log(parseInt(a)+3);//4 반올림 x
+	console.log(Math.floor(a)+3);//4
+	console.log(Number(a)+3); //4.7
+	console.log(~~(a)+3); //Math.floor(a)와 비슷,4
+</script>
+</body>
+</html>
+<!-- 
+Math.ceil() : 소수점 올림, 정수 반환
+Math.floor() : 소수점 버림, 정수 반환
+Math.round() : 소수점 반올림, 정수 반환
+toFixed() : 숫자에서 원하는 소수점 길이만큼만 반올림하여서 반환
+
+parseInt() : 문자 -> 정수     "123" -> 123
+parseFloat() : 문자 -> 실수     "45.3" -> 45.3
+Number() : 문자 -> 정수&실수
+ -->
